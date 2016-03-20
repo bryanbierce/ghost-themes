@@ -91,14 +91,33 @@ a:hover {
 strong {
 	font-weight:600;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0px;
+  display: block;
+  margin:0 auto;
+}
+table, th, tr, td {
+  padding: 10px;
+  text-align: right;
+}
+td:first-child {
+  text-align: left;
+}
 .excerpt {
 	z-index:-1;
 	position:relative;
 }
+code {
+  position:relative;
+	width:80%;
+	margin:0 auto;
+}
 .container, .pagination {
 	position:relative;
-	width:500px;
+	width:66%;
 	margin:0 auto;
+
 }
 .pagination {
 	text-align: center;
@@ -254,10 +273,11 @@ article hr {
 	border:1px solid #ddd;
 }
 article p > img, article a > img {
+  margin:0 auto;
 	display:block;
-	margin:0 auto;
 }
 .article-image {
+  margin:0 auto;
 	width:940px;
 	margin:80px -220px;
 }
@@ -416,7 +436,7 @@ header .share a {
 @media (max-width: 992px) {
 	.container, .pagination {
 		width:auto;
-		max-width:650px;
+		max-width:95%;
 		padding:0 8%;
 	}
 	.sidebar {
